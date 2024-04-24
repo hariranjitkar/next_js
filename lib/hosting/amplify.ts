@@ -34,26 +34,7 @@ export function createAmplifyHosting(
 		environmentVariables: {
 			myAmplifyEnv: 'frontend', //process.env.myAmplifyEnv
 		},
-		buildSpec: BuildSpec.fromObjectToYaml({
-			version: 1,
-			frontend: {
-				phases: {
-					preBuild: {
-						commands: ['npm ci'],
-					},
-					build: {
-						commands: ['npm run build'],
-					},
-				},
-				artifacts: {
-					baseDirectory: '.next',
-					files: ['**/*'],
-				},
-				cache: {
-					paths: ['node_modules/**/*'],
-				},
-			},
-		}),
+		
 	})
 
 	amplifyApp.addBranch(props.branch, {
