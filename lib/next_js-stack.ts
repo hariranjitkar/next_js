@@ -10,8 +10,8 @@ export class NextJsStack extends cdk.Stack {
     const amplifyHostedApp = createAmplifyHosting(this, {
       appName: "fullstack-amplify-example",
       branch: "master",
-      ghOwner: "hariranjit",
-      repo: "hosting-fullstack-cdk",
+      ghOwner: "hariranjitkar",
+      repo: "next_js",
       ghTokenName: "github-token-ex",
     })
     
