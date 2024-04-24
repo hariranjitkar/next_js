@@ -4,10 +4,10 @@ import * as amplify from '@aws-cdk/aws-amplify-alpha'
 import { BuildSpec } from 'aws-cdk-lib/aws-codebuild'
 
 type AmplifyHostingProps = {
-	appName: "hosting-fullstack-cdk"
+	appName: "fullstack-amplify-example"
 	branch: "master"
 	ghOwner: "hariranjit"
-	repo: string
+	repo: "hosting-fullstack-cdk"
 	ghTokenName: "github-token-ex"
 }
 
