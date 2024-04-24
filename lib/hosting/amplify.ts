@@ -6,8 +6,8 @@ import { BuildSpec } from 'aws-cdk-lib/aws-codebuild'
 type AmplifyHostingProps = {
 	appName: "fullstack-amplify-example"
 	branch: "master"
-	ghOwner: "hariranjit"
-	repo: "hosting-fullstack-cdk"
+	ghOwner: "hariranjitkar"
+	repo: "next_js"
 	ghTokenName: "github-token-ex"
 }
 
