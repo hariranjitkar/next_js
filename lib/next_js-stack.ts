@@ -8,7 +8,7 @@ export class NextJsStack extends cdk.Stack {
     super(scope, id, props);
 
     const amplifyHostedApp = createAmplifyHosting(this, {
-      appName: "hosting-fullstack-cdk",
+      appName: "next_js",
       branch: "master",
       ghOwner: "hariranjitkar",
       repo: "next_js",
