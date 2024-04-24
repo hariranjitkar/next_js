@@ -1,7 +1,7 @@
 import { SecretValue } from 'aws-cdk-lib'
 import { Construct } from 'constructs'
 import * as amplify from '@aws-cdk/aws-amplify-alpha'
-import { BuildSpec } from 'aws-cdk-lib/aws-codebuild'
+
 
 type AmplifyHostingProps = {
 	appName: "fullstack-amplify-example"
