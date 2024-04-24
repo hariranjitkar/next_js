@@ -1,16 +1,19 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
+import { createAmplifyHosting } from './hosting/amplify';
 // import * as sqs from 'aws-cdk-lib/aws-sqs';
 
 export class NextJsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'NextJsQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    const amplifyHostedApp = createAmplifyHosting(this, {
+      appName: "fullstack-amplify-example"
+      branch: "master"
+      ghOwner: "hariranjit"
+      repo: "hosting-fullstack-cdk"
+      ghTokenName: "github-token-ex"
+    })
+    
   }
 }
